@@ -1,5 +1,7 @@
 package notify
 
+// 声明一个名为 feiShuTemplateCard 的包级别字符串变量
+// 存储了一个飞书机器人消息卡片的 JSON 模板
 var feiShuTemplateCard = `{
   "msg_type": "interactive",
   "card": {

@@ -15,6 +15,7 @@ const (
 	NotifyTypeWebHook = 2
 )
 
+// 字符串变量, 存储了邮件的 HTML 模板
 var mailTemplate = `
 <!DOCTYPE html>
 <html lang="en">
@@ -69,8 +70,11 @@ var mailTemplate = `
 </body>
 </html>
 `
+
+// 一个包级别的私有变量, 用于存储默认的 Mail 配置
 var _defaultMail *Mail
 
+// 定义了发送邮件所需的 SMTP 服务器配置信息
 type Mail struct {
 	Port     int
 	From     string
@@ -79,7 +83,7 @@ type Mail struct {
 	Nickname string
 }
 
-// SendMsg 方法用于发送一封邮件
+// SendMsg 方法用于发送一封邮件, 实现了 Noticer 接口
 // msg: 一个指向 Message 结构体的指针
 func (mail *Mail) SendMsg(msg *Message) {
 	// 创建一个新的 gomail 消息对象

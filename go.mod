@@ -5,6 +5,8 @@ go 1.22.2
 require (
 	github.com/fsnotify/fsnotify v1.9.0
 	github.com/go-gomail/gomail v0.0.0-20160411212932-81ebce5c23df
+	github.com/jessevdk/go-flags v1.6.1
+	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/spf13/viper v1.7.1
 	go.uber.org/zap v1.27.0
 	gorm.io/driver/mysql v1.6.0
@@ -33,6 +35,7 @@ require (
 	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df // indirect
 	gopkg.in/ini.v1 v1.51.0 // indirect
+	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v2 v2.2.4 // indirect
 	sigs.k8s.io/yaml v1.5.0 // indirect
 )

@@ -39,7 +39,7 @@ func Init(endpoints []string, dialTimeout, reqTimeout int64) (*Client, error) {
 }
 
 // getter 函数, 返回一个 etcd 客户端实例
-func GetEtchClient() *Client {
+func GetEtcdClient() *Client {
 	if _defaultEtcd == nil {
 		logger.GetLogger().Error("etcd is not initialized")
 		return nil

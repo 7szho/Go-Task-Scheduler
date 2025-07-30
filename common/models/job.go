@@ -22,7 +22,7 @@ const (
 	JobExcSuccess = 1 // 执行成功
 	JobExcFail    = 0 // 执行失败
 
-	JobStatusNotAddigned = 0 // 未分配
+	JobStatusNotAssigned = 0 // 未分配
 	JobStatusAssigned    = 1 // 已分配
 
 	ManualAllocation = 1 // 手动分配
